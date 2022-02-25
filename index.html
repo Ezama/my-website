@@ -1,50 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Personal Portfolio Website">
+    <meta name="keywords" content="Portfolio, Web Developer, JavaScript">
+    <meta name="author" content="Innocent Ezama">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezama's Website</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/2b33ca07dd.js" crossorigin="anonymous"></script>
+    <!--Get your code at fontawesome.com-->
 </head>
-<body style="text-align:center;">
+
+<body>
     <header>
-        <h1 style="background-color:black; color:white;">My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                        Home</a></li>
+
+                <li><a href="aboutme.html">
+                        About me</a></li>
+
+                <li><a href="projects.html">
+                        Projects</a></li>
+
+                <li><a href="contact.html">
+                        Contact me</a></li>
+
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Innocent Ezama</h2>
-            <p>Full-Stack Web Development Student @ Outbox-EDU, 
-            a programming Bootcamp located in Kampala, Uganda.</p>
-            <p>Below are some of my <a href="projects.html" target="_blank" title="Go to projects">projects.</a></p>
-            <hr>
-        </section>
+        <aside class="logo">
+            <img src="images/portfolio-image.jpg" alt="My profile picture">
+            <h3>Innocent Ezama</h3>
+            <p>Full-stack web dev student at <a href="https://outbox.co.ug/outbox-edu" target="_blank">Outbux-EDU</a>
+            </p>
+            <ul>
+                <li><a href="https://github.com/Ezama" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/innocent-ezama-911323231/" target="_blank">Linkedin</a></li>
+                <li><a href="https://twitter.com/Eeeezz_a_lie" target="_blank">Twitter</a></li>
+                <li><a href="https://medium.com/@Ezama" target="_blank">Blog</a></li>
+            </ul>
+        </aside>
 
-        <section>
-            <div>
-                <img src="images/image1.jpg" alt="Project 1">
-                <p>Project 1</p>
-            </div>
-            <div>
-                <img src="images/image2.jpg" alt="Project 2">
-                <p>Project 2</p>
-            </div>
-            <div>
-                <img src="images/image3.jpg" alt="Project 3">
-                <p>Project 3</p>
-            </div>
-            <div>
-                <img src="images/image4.jpg" alt="Project 4">
-                <p>Project 4</p>
-            </div>
-            <hr>
+        <section class="main-section">
+            <h1>Welcome to My Website</h1>
+
+            <!-- <figure> element provides semnatic meaning to images, the <figcaption> element 
+                            provides a caption -->
+            <figure>
+                <img src="images/cover-photo-1.jfif" alt="My cover photo">
+                <!--<figcaption>My Cover Photo</figcaption>-->
+            </figure>
+
+            <article id="more-info">
+                <!--id values are necessary in the creation of bookmarks-->
+                <h3>About me</h3>
+                <p>
+                    <strong>Position:</strong> Student <br>
+                    <strong>Date of Birth:</strong> 3rd July, 1996. <br>
+                    <strong>Organisation/University:</strong> Outbox Hub <br>
+                    <strong>Residence:</strong> Namugongo, Kiira Municipality, Wakiso <br>
+                    <strong>Greatest strength in one word:</strong> Versatility <br>
+                    <strong>Currently working on:</strong> Acquiring the skills necessary to kick-start a career in
+                    tech. <br>
+                    <strong>Favourite programming language:</strong> Javascript <br>
+                    <strong>Interested in:</strong> Web development. Writing. Reading. Music. Football. Exercise.
+                    Mindfulness.
+                </p>
+            </article>
+            <section>
+                <h3>My projects</h3>
+                <div class="projects">
+                    <div class="card">
+                        <i class="fa-brands fa-html5 fa-8x"></i>
+                        <div class="container">
+                            <h4><strong>HTML</strong></h4>
+                            <p>Static Website</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-css3-alt fa-8x"></i>
+                        <div class="container">
+                            <h4><strong>CSS</strong></h4>
+                            <p>Applied Visual Design</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-js-square fa-8x"></i>
+                        <div class="container">
+                            <h4><strong>Javascript</strong></h4>
+                            <p>Intelligent Web Design</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </section>
     </main>
 
     <footer>
         <p>Copyright &copy; 2022, My Website.</p>
-        <small>Innocent Ezama.</small>
+        <p><small>Innocent Ezama.</small></p>
+        <p>Contact me via <a href="mailto:ezama.eazye@gmail.com">email.</a></p>
+
     </footer>
 
 </body>
+
 </html>
