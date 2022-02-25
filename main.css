@@ -1,4 +1,9 @@
 /* global */
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -6,12 +11,18 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: black;
-    color: lightgrey;
+    color: #ffc40c;
 }
 
 ul {
     margin: 0; 
     padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
 }
 
 /* header */
@@ -20,7 +31,7 @@ header {
     padding-top: 20px;
     width: 100%;
     height: auto;
-    border-bottom: 5px solid lightgrey;
+    border-bottom: 5px solid white;
 }
 
 nav {
@@ -38,7 +49,7 @@ nav>ul {
 
 nav>ul>li a {
     display: block;
-    color: lightgrey;
+    color: white;
     text-align: center;
     padding: 16px;
     text-decoration: none;
@@ -46,7 +57,7 @@ nav>ul>li a {
 }
 
 header a:hover {
-    color: orange; 
+    color: #B43110; 
     font-weight: bold;
 }
 
@@ -54,6 +65,7 @@ header a:hover {
 main {
     width: 80%;
     height: auto;
+    padding: 20px;
     margin: 20px auto;
     display: flex;
     flex-direction: row;
@@ -80,7 +92,7 @@ aside>p>a {
 }
 
 aside>p>a:hover {
-    color: orange;
+    color: #B43110;
     font-weight: bold;
 }
 
@@ -90,18 +102,19 @@ aside>ul {
 }
 
 aside>ul>li>a {
-    color: lightgrey;
+    color: white;
     text-decoration: none;
 }
 
 aside>ul>li>a:hover {
-    color: orange;
+    color: #B43110;
     font-weight: bold;
 }
 
 .main-section {
     flex: 4;
     text-align: center;
+    padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
@@ -112,8 +125,9 @@ aside>ul>li>a:hover {
 
 #more-info {
     text-align: justify;
-    padding-left: 50px;
-    border-bottom: 5px solid lightgrey;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid white;
 }
 
 #more-info h3 {
@@ -124,12 +138,13 @@ aside>ul>li>a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
 .card {
     flex: 1;
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
     transition: 0.3s;
 }
 
@@ -139,7 +154,7 @@ aside>ul>li>a:hover {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.8);
 }
 
 /* Add some padding inside the card container */
@@ -152,15 +167,18 @@ footer {
     background-color: black;
     width: 100%;
     height: auto;
-    border-top: 5px solid lightgrey;
+    padding: 20px;
+    border-top: 5px solid white;
+    color: white;
     text-align: center;
 }
 
 footer a {
-    color: orange;
+    color: #ffc40c;
 }
 
 footer a:hover {
+    color: #B43110;
     font-weight: bold;
 }
 
