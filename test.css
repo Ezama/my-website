@@ -1,9 +1,5 @@
 /* global */
 * {
-    /*prefix code for flexbox - to support as many browsers as possible*/
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -15,8 +11,8 @@ body {
     line-height: 1.5;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
-    color: #ffc40c;
+    background-color: #1093B4;
+    color: #B43110;
 }
 
 ul {
@@ -30,14 +26,14 @@ h3,
 h4,
 h5,
 h6 {
-    color: #B43110;
+    color: #ffc40c;
     padding: 10px;
     font-weight: bold;
 }
 
 /* header */
 #main-header {
-    background-color: black;
+    background-color: #1093B4;
     width: 100%;
     height: auto;
     border-bottom: 2px solid white;
@@ -45,7 +41,6 @@ h6 {
 
 nav>ul {
     list-style-type: none;
-    /* not sure how it works yet*/
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -53,10 +48,8 @@ nav>ul {
     justify-content: flex-end;
 }
 
-/* not sure how it works yet*/
-nav>ul>li:nth-child(1) {
+nav>ul>li:nth-child(1){
     flex-grow: 1;
-    
 }
 
 nav>ul>li>a {
@@ -109,6 +102,7 @@ aside {
 }
 
 .logo>p>a {
+    text-decoration: none;
     color: white;
 }
 
@@ -119,7 +113,6 @@ aside {
 
 .logo>ul {
     list-style-type: none;
-    text-decoration: underline;
     padding: 0 20px 0;
 }
 
@@ -160,37 +153,18 @@ aside {
     text-align: center;
 }
 
-.skills-section,
-.projects-section {
+.last-section {
     padding: 50px 0px;
 }
 
-.skills-section>h3,
-.projects-section>h3 {
+.last-section h3 {
     padding-bottom: 30px;
 }
 
-.projects-section>h3 {
-    display: inline-block;
-}
-
-button {
-    background-color: #B43110;
-    border: none;
-    color: white;
-    padding: 5px 5px;
-    border-radius: 5%;
-    display: inline-block;
-    text-align: center;
-
-}
-
-.skills,
 .projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
 }
 
 .card {
@@ -200,8 +174,8 @@ button {
     transition: 0.3s;
 }
 
-.card>img {
-    width: 90%;
+.card img {
+    width: 100%;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -214,62 +188,9 @@ button {
     padding: 2px 16px;
 }
 
-/*project cards*/
-.project-card {
-    flex-basis: 40%;
-}
-
-/*contact form*/
-form {
-    flex: 3;
-}
-
-fieldset {
-    display: inline-block;
-    flex-grow: 1;
-    max-width: fit-content;
-    padding: 10px;
-    border-color: white;
-    border-width: 3px;
-    border-style: solid;
-}
-
-fieldset>legend {
-    color: white;
-}
-
-p>label {
-    display: block;
-}
-
-
-/*attribute selectors e.g. 
-img[src="url of image"] {
-    border: 1px solid grey;
-}
-*/
-
-input[type="email"],
-input[type="tel"],
-textarea {
-    border-radius: 7px;
-}
-
-input:valid {
-    border-color: #1093B4;
-}
-
-input:invalid {
-    border-color: #B43110;
-}
-
-input:focus:invalid {
-    border-color: #ffc40c;
-}
-
 /* footer */
 footer {
-    background-color: black;
+    background-color: #1093B4;
     width: 100%;
     height: auto;
     padding: 20px;
@@ -294,7 +215,7 @@ footer a:hover {
         justify-content: space-around;
     }
 
-    nav>ul>li:nth-child(1) {
+    nav>ul>li:nth-child(1){
         display: none;
     }
 
@@ -309,17 +230,13 @@ footer a:hover {
         border-radius: 50%;
     }
 
-    .card {
-        flex-basis: 40%;
-    }
-
     .last-card {
         flex-basis: 100%;
     }
 }
 
 /* small screens */
-@media (max-width: 500px) {
+@media (max-width: 425px) {
     #main-header {
         border-bottom: 1px solid white;
     }
@@ -365,13 +282,8 @@ footer a:hover {
         border-bottom: 1px solid white;
     }
 
-    .skills,
     .projects {
         flex-direction: column;
-    }
-
-    fieldset {
-        border-style: none;
     }
 
     footer {

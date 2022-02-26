@@ -1,72 +1,115 @@
+<!-- layout from Bethany's Pie Shop Sample Website - pluralsight-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!--from w3schools-->
     <meta charset="UTF-8">
+    <!--Search Engine Optimization-->
     <meta name="description" content="Personal Portfolio Website">
     <meta name="keywords" content="Portfolio, Web Developer, JavaScript">
     <meta name="author" content="Innocent Ezama">
+    <!--viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ezama's Website</title>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato
+    :wght@100&display=swap" rel="stylesheet">
+    <!--css file-->
     <link rel="stylesheet" href="main.css">
+    <!--Get your code at fontawesome.com -- icons-->
     <script src="https://kit.fontawesome.com/2b33ca07dd.js" crossorigin="anonymous"></script>
-    <!--Get your code at fontawesome.com-->
 </head>
 
 <body>
-    <header class="main-header">
+    <header id="main-header">
         <nav>
             <ul>
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="aboutme.html">
-                    <li>About me</li>
-                </a>
-                <a href="projects.html">
-                    <li>Projects</li>
-                </a>
-                <a href="contact.html">
-                    <li>Contact me</li>
-                </a>
+                <li>
+                    <h2>Innocent Ezama</h2>
+                </li>
+
+                <li><a href="index.html">
+                        Home</a></li>
+
+                <li><a href="#more-info">
+                        About</a></li>
+
+                <li><a href="#skill-up">
+                        Skills</a></li>
+
+                <li><a href="projects.html">
+                        Projects</a></li>
+
+                <li><a href="contact.html">
+                        Contact</a></li>
+
             </ul>
         </nav>
     </header>
 
     <main>
-        <aside class="about-me">
+        <header class="heading">
+            <h1>Contact me</h1>
+        </header>
+        <aside>
+        <div class="logo">
             <img src="images/portfolio-image.jpg" alt="My profile picture">
-            <p>
-                <strong>Name: Innocent Ezama</strong> <br>
-                <strong>Position:</strong> Student <br>
-                <strong>Organisation/University:</strong> Outbox Hub <br><br>
-                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/innocent-ezama-911323231/">
-                    https://www.linkedin.com/in/innocent-ezama-911323231/</a> <br>
-                <strong>Twitter:</strong> <a href="https://twitter.com/Eeeezz_a_lie"> https://twitter.com/Eeeezz_a_lie
-                </a> <br>
-                <strong>Blog:</strong> <a href="https://medium.com/@Ezama">https://medium.com/@Ezama</a> <br>
-                <strong>Hometown:</strong> Kiira Municipality, Wakiso
-                <br><br>
-                <strong>Greatest strength in one word:</strong> Versatility <br>
-                <strong>Currently working on:</strong> Acquiring the skills necessary to kick-start a career in tech.
-                <br>
-                <strong>Favourite programming language:</strong> Javascript <br>
-                <strong>Interested in:</strong> Software development. Writing. Reading. Music. Football. Exercise.
-                Mindfulness.
+            <h3>Innocent Ezama</h3>
+            <p>Full-stack web dev student at <br> <a href="https://outbox.co.ug/outbox-edu"
+                    target="_blank">Outbux-EDU</a>
             </p>
+            <br>
+            <p>Links</p>
+            <ul>
+                <li><a href="https://github.com/Ezama" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/innocent-ezama-911323231/" target="_blank">Linkedin</a>
+                </li>
+                <li><a href="https://twitter.com/Eeeezz_a_lie" target="_blank">Twitter</a></li>
+                <li><a href="https://medium.com/@Ezama" target="_blank">Blog</a></li>
+            </ul>
+        </div>
+        <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="nameField">*Your name: </label>
+                    <input id="nameField" type="text" required minlength="10" maxlength="75" name="customerName">
+                </p>
+                <p>
+                    <label for="customerEmail">Your email: </label>
+                    <input type="email" name="customerEmail" id="customerEmail">
+                </p>
+                <p><label for="customerPhone">Your phone: </label>
+                    <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone">
+                </p>
+                <p>
+                    <label>Phone type: </label>
+                </p>
 
-
-            <section></section>
-
-
-            <section>
-
-            </section>
+                <label><input type="radio" name="phoneType" value="cell">Cell</label>
+                <label><input type="radio" name="phoneType" value="work">Work</label>
+                <label><input type="radio" name="phoneType" value="home">Home</label>
+                <p>
+                    Ok to contact me:
+                    <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
+                    <label><input type="checkbox" name="okToContact" value="email"> by email</label>
+                    <legend>Feedback</legend>
+                <p>
+                    <textarea required tabindex="1" name="feedbackText" cols="40" rows="3"></textarea>
+                </p>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+        </aside>
     </main>
 
     <footer>
         <p>Copyright &copy; 2022, My Website.</p>
-        <small>Innocent Ezama.</small>
+        <p><small>Innocent Ezama.</small></p>
+        <p>Contact me via <a href="mailto:ezama.eazye@gmail.com">email.</a></p>
+
     </footer>
 
 </body>

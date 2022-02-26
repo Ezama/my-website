@@ -1,35 +1,47 @@
-<!-- layout from Bethany's Pie Shop Sample Website-->
+<!-- layout from Bethany's Pie Shop Sample Website - pluralsight-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!--from w3schools-->
     <meta charset="UTF-8">
+    <!--Search Engine Optimization-->
     <meta name="description" content="Personal Portfolio Website">
     <meta name="keywords" content="Portfolio, Web Developer, JavaScript">
     <meta name="author" content="Innocent Ezama">
+    <!--viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ezama's Website</title>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato
+    :wght@100&display=swap" rel="stylesheet">
+    <!--css file-->
     <link rel="stylesheet" href="main.css">
+    <!--Get your code at fontawesome.com -- icons-->
     <script src="https://kit.fontawesome.com/2b33ca07dd.js" crossorigin="anonymous"></script>
-    <!--Get your code at fontawesome.com-->
 </head>
 
 <body>
     <header id="main-header">
         <nav>
             <ul>
+                <li><h2>Innocent Ezama</h2></li>
+
                 <li><a href="index.html">
                         Home</a></li>
 
-                <li><a href="aboutme.html">
-                        About me</a></li>
+                <li><a href="#more-info">
+                        About</a></li>
+
+                <li><a href="#skill-up">
+                        Skills</a></li>
 
                 <li><a href="projects.html">
                         Projects</a></li>
 
                 <li><a href="contact.html">
-                        Contact me</a></li>
+                        Contact</a></li>
 
             </ul>
         </nav>
@@ -39,28 +51,30 @@
         <header class="heading">
             <h1>Welcome to My Website</h1>
         </header>
-        <aside class="aside">
+        <aside>
             <div class="logo">
-            <img src="images/portfolio-image.jpg" alt="My profile picture">
-            <h3>Innocent Ezama</h3>
-            <p>Full-stack web dev student at <br> <a href="https://outbox.co.ug/outbox-edu" target="_blank">Outbux-EDU</a>
-            </p>
-            <br>
-            <p>Links</p>
-            <ul>
-                <li><a href="https://github.com/Ezama" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/innocent-ezama-911323231/" target="_blank">Linkedin</a></li>
-                <li><a href="https://twitter.com/Eeeezz_a_lie" target="_blank">Twitter</a></li>
-                <li><a href="https://medium.com/@Ezama" target="_blank">Blog</a></li>
-            </ul>
+                <img src="images/portfolio-image.jpg" alt="My profile picture">
+                <h3>Innocent Ezama</h3>
+                <p>Full-stack web dev student at <br> <a href="https://outbox.co.ug/outbox-edu"
+                        target="_blank">Outbux-EDU</a>
+                </p>
+                <br>
+                <p>Links</p>
+                <ul>
+                    <li><a href="https://github.com/Ezama" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/innocent-ezama-911323231/" target="_blank">Linkedin</a>
+                    </li>
+                    <li><a href="https://twitter.com/Eeeezz_a_lie" target="_blank">Twitter</a></li>
+                    <li><a href="https://medium.com/@Ezama" target="_blank">Blog</a></li>
+                </ul>
             </div>
             <div class="cover-photo">
                 <!-- <figure> element provides semnatic meaning to images, the <figcaption> element 
                             provides a caption -->
-            <figure>
-                <img src="images/cover-photo-1.jfif" alt="My cover photo">
-                <figcaption><small>My Cover Photo</small></figcaption>
-            </figure>
+                <figure>
+                    <img src="images/cover-photo-1.jfif" alt="My cover photo">
+                    <figcaption><small>My Cover Photo</small></figcaption>
+                </figure>
             </div>
         </aside>
 
@@ -82,10 +96,10 @@
                     Mindfulness.
                 </p>
             </article>
-            <section class="last-section">
-                <h3>My projects</h3>
+            <section id="skill-up" class="skills-section">
+                <h3>Skills</h3>
                 <!--layout from Progate || cards from w3schools-->
-                <div class="projects">
+                <div class="skills">
                     <div class="card">
                         <i class="fa-brands fa-html5 fa-8x"></i>
                         <div class="container">
@@ -100,15 +114,64 @@
                             <p>Applied Visual Design</p>
                         </div>
                     </div>
-                    <div class="card last-card">
+                    <div class="card">
                         <i class="fa-brands fa-js-square fa-8x"></i>
                         <div class="container">
                             <h4><strong>Javascript</strong></h4>
                             <p>Intelligent Web Design</p>
                         </div>
                     </div>
+                    <div class="card">
+                        <i class="fa-solid fa-file-word fa-8x"></i>
+                        <div class="container">
+                            <h4><strong>Technical Writing</strong></h4>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
+            <section class="projects-section">
+                <h3>Projects</h3>
+                <button>View All</button>
+                <!--layout from Progate || cards from w3schools-->
+                <div class="projects">
+                    <div class="card project-card">
+                        <i class="fa-solid fa-award fa-8x"></i>
+                        <div class="container">
+                            <h4><strong>Tribute Page</strong></h4>
+                            <p>A tribute page is basically an overview of someone whom we admire in our life.</p>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <i class="fa-solid fa-square-poll-vertical fa-8x"></i>
+                        <div class="container">
+                            <h4><strong>Survey Form</strong></h4>
+                            <p>Applied Visual Design</p>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <i class="fa-solid fa-plane-arrival fa-8x"></i>
+                        <div class="container">
+                            <h4><strong>Product Landing Page</strong></h4>
+                            <p>Intelligent Web Design</p>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <i class="fa-solid fa-gear fa-8x"></i>
+                        <div class="container">
+                            <h4><strong>Technical Documentation Page</strong></h4>
+                            <p>Intelligent Web Design</p>
+                        </div>
+                    </div>
+                    <div class="card project-card last-card">
+                        <i class="fa-solid fa-user fa-8x"></i>
+                        <div class="container">
+                            <h4><strong>Personal Portfolio Webpage</strong></h4>
+                            <p>Intelligent Web Design</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
     </main>
