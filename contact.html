@@ -24,10 +24,10 @@
 
 <body>
     <header id="main-header">
-        <nav>
+        <nav class="main-nav">
             <ul>
                 <li>
-                    <h2>Innocent Ezama</h2>
+                    <h2>I.E</h2>
                 </li>
 
                 <li><a href="index.html">
@@ -49,67 +49,60 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contact-page">
         <header class="heading">
             <h1>Contact me</h1>
         </header>
-        <aside>
-        <div class="logo">
-            <img src="images/portfolio-image.jpg" alt="My profile picture">
-            <h3>Innocent Ezama</h3>
-            <p>Full-stack web dev student at <br> <a href="https://outbox.co.ug/outbox-edu"
-                    target="_blank">Outbux-EDU</a>
-            </p>
-            <br>
-            <p>Links</p>
-            <ul>
-                <li><a href="https://github.com/Ezama" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/innocent-ezama-911323231/" target="_blank">Linkedin</a>
-                </li>
-                <li><a href="https://twitter.com/Eeeezz_a_lie" target="_blank">Twitter</a></li>
-                <li><a href="https://medium.com/@Ezama" target="_blank">Blog</a></li>
-            </ul>
-        </div>
-        <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <p>
-                    <label for="nameField">*Your name: </label>
-                    <input id="nameField" type="text" required minlength="10" maxlength="75" name="customerName">
-                </p>
-                <p>
-                    <label for="customerEmail">Your email: </label>
-                    <input type="email" name="customerEmail" id="customerEmail">
-                </p>
-                <p><label for="customerPhone">Your phone: </label>
-                    <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone">
-                </p>
-                <p>
-                    <label>Phone type: </label>
-                </p>
+        <!--<div class="links">
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/Ezama" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/innocent-ezama-911323231/" target="_blank">Linkedin</a>
+                    </li>
+                    <li><a href="https://twitter.com/Eeeezz_a_lie" target="_blank">Twitter</a></li>
+                    <li><a href="https://medium.com/@Ezama" target="_blank">Blog</a></li>
+                </ul>
+            </nav>
+        </div>-->
+        <div class="contact-form">
+            <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <p>
+                        <label for="nameField">*Your name: </label>
+                        <input id="nameField" type="text" required minlength="10" maxlength="75" name="customerName">
+                    </p>
+                    <p>
+                        <label for="customerEmail">Your email: </label>
+                        <input type="email" name="customerEmail" id="customerEmail">
+                    </p>
+                    <p><label for="customerPhone">Your phone: </label>
+                        <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone">
+                    </p>
+                    <p>
+                        <label>Phone type: </label>
+                    </p>
 
-                <label><input type="radio" name="phoneType" value="cell">Cell</label>
-                <label><input type="radio" name="phoneType" value="work">Work</label>
-                <label><input type="radio" name="phoneType" value="home">Home</label>
-                <p>
-                    Ok to contact me:
-                    <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
-                    <label><input type="checkbox" name="okToContact" value="email"> by email</label>
-                    <legend>Feedback</legend>
-                <p>
-                    <textarea required tabindex="1" name="feedbackText" cols="40" rows="3"></textarea>
-                </p>
-                <button>Submit</button>
-            </fieldset>
-        </form>
-        </aside>
+                    <label><input type="radio" name="phoneType" value="cell">Cell</label>
+                    <label><input type="radio" name="phoneType" value="work">Work</label>
+                    <label><input type="radio" name="phoneType" value="home">Home</label>
+                    <p>
+                        Ok to contact me:
+                        <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
+                        <label><input type="checkbox" name="okToContact" value="email"> by email</label>
+                        <legend>Feedback</legend>
+                    <p>
+                        <textarea required tabindex="1" name="feedbackText" cols="40" rows="3"></textarea>
+                    </p>
+                    <button>SUBMIT</button>
+                </fieldset>
+            </form>
+        </div>
     </main>
 
     <footer>
-        <p>Copyright &copy; 2022, My Website.</p>
-        <p><small>Innocent Ezama.</small></p>
+        <p><small>&copy; 2022 Ezama, all rights reserved.</small></p>
         <p>Contact me via <a href="mailto:ezama.eazye@gmail.com">email.</a></p>
-
     </footer>
 
 </body>

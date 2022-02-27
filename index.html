@@ -24,18 +24,17 @@
 
 <body>
     <header id="main-header">
-        <nav>
+        <nav class="main-nav">
             <ul>
-                <li><h2>Innocent Ezama</h2></li>
+                <li>
+                    <h2>I.E</h2>
+                </li>
 
                 <li><a href="index.html">
                         Home</a></li>
 
                 <li><a href="#more-info">
                         About</a></li>
-
-                <li><a href="#skill-up">
-                        Skills</a></li>
 
                 <li><a href="projects.html">
                         Projects</a></li>
@@ -48,42 +47,34 @@
     </header>
 
     <main>
-        <header class="heading">
-            <h1>Welcome to My Website</h1>
-        </header>
-        <aside>
-            <div class="logo">
-                <img src="images/portfolio-image.jpg" alt="My profile picture">
-                <h3>Innocent Ezama</h3>
-                <p>Full-stack web dev student at <br> <a href="https://outbox.co.ug/outbox-edu"
-                        target="_blank">Outbux-EDU</a>
-                </p>
-                <br>
-                <p>Links</p>
-                <ul>
+        <section id="introduction">
+            <div class="intro">
+                <img src="images/portfolio-image2.jpg" alt="My profile picture">
+            </div>
+            <div class="welcome">
+                <p class="greeting">Hello I'm Ezama</p>
+                <p>Full Stack</p>
+                <h1>Web Developer</h1>
+                <p class="description">I design and develop experiences that make people's lives simpler. Keep scrolling
+                    for more fun.</p> <br>
+                <button>ABOUT ME</button>
+
+                <!--<ul>
                     <li><a href="https://github.com/Ezama" target="_blank">Github</a></li>
                     <li><a href="https://www.linkedin.com/in/innocent-ezama-911323231/" target="_blank">Linkedin</a>
                     </li>
                     <li><a href="https://twitter.com/Eeeezz_a_lie" target="_blank">Twitter</a></li>
                     <li><a href="https://medium.com/@Ezama" target="_blank">Blog</a></li>
-                </ul>
+                </ul>-->
             </div>
-            <div class="cover-photo">
-                <!-- <figure> element provides semnatic meaning to images, the <figcaption> element 
-                            provides a caption -->
-                <figure>
-                    <img src="images/cover-photo-1.jfif" alt="My cover photo">
-                    <figcaption><small>My Cover Photo</small></figcaption>
-                </figure>
-            </div>
-        </aside>
+        </section>
 
         <section class="main-section">
-            <article id="more-info">
-                <!--id values are necessary in the creation of bookmarks-->
+            <!--<article id="more-info">
+                
                 <h3>About me</h3>
                 <p>
-                    <!--from Full stack III look book-->
+                    
                     <strong>Position:</strong> Student <br>
                     <strong>Date of Birth:</strong> 3rd July, 1996. <br>
                     <strong>Organisation/University:</strong> Outbox Hub <br>
@@ -95,81 +86,107 @@
                     <strong>Interested in:</strong> Web development. Writing. Reading. Music. Football. Exercise.
                     Mindfulness.
                 </p>
-            </article>
-            <section id="skill-up" class="skills-section">
-                <h3>Skills</h3>
+            </article>-->
+            <section class="skills-section">
                 <!--layout from Progate || cards from w3schools-->
                 <div class="skills">
+
                     <div class="card">
-                        <i class="fa-brands fa-html5 fa-8x"></i>
+                        <i class="fa-brands fa-html5 fa-5x"></i>
                         <div class="container">
-                            <h4><strong>HTML</strong></h4>
-                            <p>Static Website</p>
+                            <h4><strong>Responsive Web Design</strong></h4>
+                            <p>an approach to web development that creates dynamic changes to the appearance of a
+                                website
+                            </p>
+                            <a href="">
+                                <h5>KNOW MORE <i class="fa-solid fa-arrow-right"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card odd-man-out">
+                        <i class="fa-brands fa-js-square fa-5x"></i>
+                        <div class="container">
+                            <h4><strong>Interactive Web Design</strong></h4>
+                            <p>implement complex features on web pages using JavaScript thereby improving user
+                                experience</p>
+                            <a href="">
+                                <h5>KNOW MORE <i class="fa-solid fa-arrow-right"></i></h5>
+                            </a>
                         </div>
                     </div>
                     <div class="card">
-                        <i class="fa-brands fa-css3-alt fa-8x"></i>
+                        <i class="fa-solid fa-file-word fa-5x"></i>
                         <div class="container">
-                            <h4><strong>CSS</strong></h4>
-                            <p>Applied Visual Design</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <i class="fa-brands fa-js-square fa-8x"></i>
-                        <div class="container">
-                            <h4><strong>Javascript</strong></h4>
-                            <p>Intelligent Web Design</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <i class="fa-solid fa-file-word fa-8x"></i>
-                        <div class="container">
-                            <h4><strong>Technical Writing</strong></h4>
-                            <p>Web Development</p>
+                            <h4><strong>Technical <br>Writing</strong></h4>
+                            <p>communicating complex information to those who need it to accomplish some task or goal
+                            </p>
+                            <a href="">
+                                <h5>KNOW MORE <i class="fa-solid fa-arrow-right"></i></h5>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="projects-section">
-                <h3>Projects</h3>
-                <button>View All</button>
+                <div class="align-flex" id="align">
+                    <div class="flex-left">
+                        <h3>FEATURED PROJECTS</h3>
+                        <p>Below are some of the web development projects I've made or been a part of.</p>
+                    </div>
+                    <div class="flex-right">
+                        <button>View All</button>
+                    </div>
+                </div>
                 <!--layout from Progate || cards from w3schools-->
                 <div class="projects">
-                    <div class="card project-card">
-                        <i class="fa-solid fa-award fa-8x"></i>
+                    <div class="project-card">
+                        <img src="images/tribute-3.jpg" alt="">
                         <div class="container">
                             <h4><strong>Tribute Page</strong></h4>
-                            <p>A tribute page is basically an overview of someone whom we admire in our life.</p>
+                            <a href="">
+                                <h5>KNOW MORE <i class="fa-solid fa-arrow-right"></i></h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="card project-card">
-                        <i class="fa-solid fa-square-poll-vertical fa-8x"></i>
+                    <div class="project-card">
+                        <img src="images/survey-form.jpg" alt="">
                         <div class="container">
                             <h4><strong>Survey Form</strong></h4>
-                            <p>Applied Visual Design</p>
+                            <a href="">
+                                <h5>KNOW MORE <i class="fa-solid fa-arrow-right"></i></h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="card project-card">
-                        <i class="fa-solid fa-plane-arrival fa-8x"></i>
+                    <div class="project-card">
+                        <img src="images/product2.jpg" alt="">
                         <div class="container">
                             <h4><strong>Product Landing Page</strong></h4>
-                            <p>Intelligent Web Design</p>
+                            <a href="">
+                                <h5>KNOW MORE <i class="fa-solid fa-arrow-right"></i></h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="card project-card">
-                        <i class="fa-solid fa-gear fa-8x"></i>
-                        <div class="container">
-                            <h4><strong>Technical Documentation Page</strong></h4>
-                            <p>Intelligent Web Design</p>
-                        </div>
-                    </div>
-                    <div class="card project-card last-card">
-                        <i class="fa-solid fa-user fa-8x"></i>
+                    <div class="project-card">
+                        <img src="images/personal-portfolio.jpg" alt="">
                         <div class="container">
                             <h4><strong>Personal Portfolio Webpage</strong></h4>
-                            <p>Intelligent Web Design</p>
+                            <a href="">
+                                <h5>KNOW MORE <i class="fa-solid fa-arrow-right"></i></h5>
+                            </a>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section">
+                <div class="align-flex">
+                    <h2>Let's work together on your next project</h2>
+                    <div class="flex-left">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="flex-right">
+                       <a href="contact.html"><button>CONTACT</button></a>
                     </div>
                 </div>
             </section>
@@ -177,8 +194,7 @@
     </main>
 
     <footer>
-        <p>Copyright &copy; 2022, My Website.</p>
-        <p><small>Innocent Ezama.</small></p>
+        <p><small>&copy; 2022 Ezama, all rights reserved.</small></p>
         <p>Contact me via <a href="mailto:ezama.eazye@gmail.com">email.</a></p>
 
     </footer>
