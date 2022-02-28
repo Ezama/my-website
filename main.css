@@ -1,3 +1,5 @@
+/*Creating responsive pages with flexbox*/
+
 /* global */
 
 /*global selector - applies to every single tag on the page*/
@@ -15,6 +17,7 @@ body {
     font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    /*The percentage is based on the width of the container. margin-right: auto; The auto keyword will give the right side a share of the remaining space. When combined with margin-left: auto , it will center the element, if a fixed width is defined.*/
     margin-left: auto;
     margin-right: auto;
     background-color: black;
@@ -25,17 +28,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
-/*h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #B43110;
-    padding: 10px;
-    font-weight: bold;
-}*/
 
 button {
     background-color: #B43110;
@@ -64,19 +56,22 @@ p {
 
 nav>ul {
     list-style-type: none;
-    /* not sure how it works yet*/
+    /*The CSS overflow property controls what happens to content that is too big to fit into an area.
+    - overflow:hidden; prevents scrollbars from showing up, even when they're necessary.*/
     overflow: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-end; 
 }
 
-/* not sure how it works yet*/
+/*pseudo class for first child of nav list*/
 .main-nav>ul>li:nth-child(1) {
+    /*The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+    flex-grow: 1; -- it will take up an equal amount of space as the other flex-items(the rest of the nav list elements), in this case 50% of the available space.
+    */
     flex-grow: 1;
     color: #B43110;
-
 }
 
 nav>ul>li>a {
@@ -121,6 +116,7 @@ main {
     flex: 1;
 }
 
+/*profile picture*/
 .intro>img {
     width: 250px;
     height: auto;
@@ -163,7 +159,7 @@ main {
 
 .greeting {
     font-size: 16px;
-    color: #B43110;
+    color: #FF4433;
 }
 
 .description {
@@ -171,6 +167,7 @@ main {
 }
 
 /*
+use for the about me page
 .main-section {
     text-align: center;
     padding-bottom: 10px;
@@ -207,7 +204,6 @@ main {
 
 .card {
     flex: 30%;
-    /*max-width: 30%;*/
     background: #1b1b1b;
     transition: 0.3s;
     padding: 10px 10px 20px;
@@ -257,7 +253,6 @@ main {
 .align-flex {
     display: flex;
     flex-wrap: wrap;
-    /*gap: 10px;*/
     padding-bottom: 10px;
 }
 
@@ -276,7 +271,6 @@ main {
 }
 
 .project-card {
-    margin: auto;
     flex: 45%;
     background: #1b1b1b;
     padding: 10px 10px 20px;
@@ -286,6 +280,12 @@ main {
     width: 100%;
     height: auto;
 }
+
+/* only use if images are links
+transform property increases size of image on hover
+.project-card>img:hover {
+    transform: scale(1.1);
+}*/
 
 .projects-section>h3,
 .projects-section>p {
@@ -309,7 +309,7 @@ main {
     margin: 10px;
 }
 
-/*contact form*/
+/*contact page*/
 .contact-form {
     display: flex;
     max-width: auto;
@@ -365,19 +365,69 @@ input:focus:invalid {
 
 /* footer */
 footer {
-    background-color: #1b1b1b;
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    color: white;
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    background: #1b1b1b repeat-x;
+    height: auto;
+    padding: 20px 0;
+    color: white;
 }
 
-footer a {
-    color: #B43110;
+footer>a {
+    /*color: #FF4433;*/
 }
 
 footer a:hover {
+    font-weight: bold;
+}
+
+.footer-container {
+    flex: 1;
+}
+
+.footer-container>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.footer-container>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container>ul>li>a.linkedin {
+    color: #0e76a8;
+}
+
+.footer-container>ul>li>a.twitter {
+    color: #1DA1F2;
+}
+
+.footer-container>ul>li:hover {
+    transform: scale(1.5);
+}
+
+.footer-left {
+    color: #B43110;
+}
+
+.footer-center>p {
+    padding-top: 5px;
+}
+
+.footer-center>p>a {
+    color: #FF4433;
+}
+
+.footer-center>p>a:hover {
     font-weight: bold;
 }
 
@@ -476,5 +526,10 @@ footer a:hover {
 
     footer {
         text-align: center;
+        flex-direction: column;
+    }
+
+    .footer-left {
+        display: none;
     }
 }
