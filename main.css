@@ -12,6 +12,17 @@
     padding: 0;
 }
 
+/*possible clors
+- red
+- black
+- shade of black #1b1b1b
+- viking #54BBBB
+- tiffany blue #0ABAB5
+- gold #FFC62F
+- coral red #ff4040
+- darker shades of red #B43110 #cf4522
+*/
+
 body {
     /*font-family: Arial, Helvetica, sans-serif;*/
     font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,7 +60,7 @@ p {
 
 /* header */
 #main-header {
-    background-color: #1b1b1b;
+    /*background-color: #1b1b1b;*/
     width: 100%;
     height: auto;
 }
@@ -62,7 +73,7 @@ nav>ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end; 
+    justify-content: space-around; 
 }
 
 /*pseudo class for first child of nav list*/
@@ -81,11 +92,12 @@ nav>ul>li>a {
     color: white;
     padding: 16px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 nav>ul>li>a:hover {
-    background: #B43110;
+    /*background: #FF4433;*/
+    color: #B43110;
     font-weight: bold;
 }
 
@@ -109,7 +121,7 @@ main {
     justify-content: space-around;
     padding-top: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .intro {
@@ -118,7 +130,7 @@ main {
 
 /*profile picture*/
 .intro>img {
-    width: 250px;
+    width: 300px;
     height: auto;
 }
 
@@ -143,7 +155,7 @@ main {
 }
 
 .intro>ul>li>a:hover {
-    color: #B43110;
+    color: #FF4433;
     font-weight: bold;
 }
 
@@ -155,11 +167,13 @@ main {
 
 .welcome>h1 {
     font-size: 30px;
+    color: #B43110;
 }
 
 .greeting {
     font-size: 16px;
     color: #FF4433;
+    padding-bottom: 5px;
 }
 
 .description {
@@ -191,6 +205,7 @@ use for the about me page
 .projects-section {
     padding: 30px 0px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .skills,
@@ -242,7 +257,7 @@ use for the about me page
     text-decoration: none;
     font-size: 15px;
     font-weight: normal;
-    color: #B43110;
+    color: #FF4433;
 }
 
 .odd-man-out>.container>a {
@@ -305,8 +320,8 @@ transform property increases size of image on hover
 /*contact-section*/
 .contact-section {
     background: #1b1b1b;
-    padding: 30px;
-    margin: 10px;
+    padding: 50px;
+    margin-bottom: 30px;
 }
 
 /*contact page*/
@@ -356,11 +371,11 @@ input:valid {
 }
 
 input:invalid {
-    border-color: #B43110;
+    border-color: #FF4433;
 }
 
 input:focus:invalid {
-    border-color: #ffc40c;
+    border-color: #FFC62F;
 }
 
 /* footer */
@@ -434,6 +449,10 @@ footer a:hover {
 /* Media Querries */
 /* medium screens */
 @media (max-width:800px) {
+    #main-header {
+        background-color: #1b1b1b;
+    }
+
     nav>ul {
         justify-content: space-around;
     }
