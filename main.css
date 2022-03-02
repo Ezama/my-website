@@ -61,8 +61,9 @@ p {
 /* header */
 #main-header {
     /*background-color: #1b1b1b;*/
-    width: 100%;
+    width: 70%;
     height: auto;
+    margin: auto;
 }
 
 nav>ul {
@@ -73,7 +74,7 @@ nav>ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: space-between;
 }
 
 /*pseudo class for first child of nav list*/
@@ -83,6 +84,7 @@ nav>ul {
     */
     flex-grow: 1;
     color: #B43110;
+    padding: 10px;
 }
 
 nav>ul>li>a {
@@ -167,7 +169,6 @@ main {
 
 .welcome>h1 {
     font-size: 30px;
-    color: #B43110;
 }
 
 .greeting {
@@ -451,10 +452,16 @@ footer a:hover {
 @media (max-width:800px) {
     #main-header {
         background-color: #1b1b1b;
+        width: 100%;
     }
 
     nav>ul {
         justify-content: space-around;
+    }
+
+    nav>ul>li>a:hover {
+        background: #B43110;
+        color: white;
     }
 
     nav>ul>li:nth-child(1) {
