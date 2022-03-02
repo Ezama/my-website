@@ -50,7 +50,11 @@ button {
     text-align: center;
 }
 
-button:hover {
+button>a {
+    text-decoration: none;
+}
+
+button>a:hover {
     font-weight: bold;
 }
 
@@ -328,7 +332,8 @@ transform property increases size of image on hover
 /*contact page*/
 .contact-form {
     display: flex;
-    max-width: auto;
+    /*Error: max-width: auto is not a max-width value. - from validator.w3.org
+    max-width: auto;*/
 }
 
 .heading {
